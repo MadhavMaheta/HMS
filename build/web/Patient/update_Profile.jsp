@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js">
     --><link rel="stylesheet" href="newser.css">
 </head>
-<body >
+<body style="background-image:url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-9-full.jpg)">
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
@@ -55,12 +55,12 @@ resultSet = statement.executeQuery(sql);
 while(resultSet.next()){
 %>
                     
-                  <label>Name</label>
+<label style=" font-size: 28px; font-weight: 500">Name &nbsp;&nbsp;&nbsp;&nbsp; </label>
                       <input type="text" name="name" placeholder="Enter your name" value="<%=resultSet.getString("name") %>">
                     </div>
                     <div class="field">
                     
-                  <label>Password</label>
+                  <label style=" font-size: 28px; font-weight: 500">Password &nbsp;&nbsp;&nbsp;&nbsp;</label>
                       <input type="text" name="pwd" placeholder="Enter a password" value="<%=resultSet.getString("password") %>">
                     </div>
                    
@@ -68,33 +68,33 @@ while(resultSet.next()){
                 </div>
                 <div class="two fields">
                   <div class="field">
-                    <label>Contact number</label>
+                    <label style="  font-size: 28px; font-weight: 500">Contact number &nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="number" name="pno" placeholder="phone number" value="<%=resultSet.getString("contact_no") %>">
                     
                   </div>
                   <div class="field">
-                    <label for="">Email id</label>
+                    <label style="  font-size: 28px; font-weight: 500"for="">Email id &nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="text" name="pemail" placeholder="email id" value="<%=resultSet.getString("email") %>">
                   </div>
                 </div>
                 <div class= "three fields">
                     <div class="field">
-                  <label>Patient Address</label>
+                  <label style="  font-size: 28px; font-weight: 500">Patient Address &nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <input type="text" name="street" placeholder="Street Address" value="<%=resultSet.getString("street") %>">
                     </div>
                     <div class=" field">
-                      <label for="">locality/Area</label>
+                      <label style="  font-size: 28px; font-weight: 500 " for="">locality/Area &nbsp;&nbsp;&nbsp;&nbsp;</label>
                       <input type="text" name="area" placeholder="Area" value="<%=resultSet.getString("locality") %>">
                     </div>
                     <div class="field">
-                      <label for="">Adhaar number</label>
+                      <label style="  font-size: 28px; font-weight: 500" for="">Adhaar number &nbsp;&nbsp;&nbsp;&nbsp;</label>
                       <input type="number" name="aadhar" placeholder="adhaar number" value="<%=resultSet.getString("aadhar") %>">
                     </div>
                  
                 </div>
                 <div class="two fields">
                   <div class="field">
-                    <label>State</label>
+                    <label style="  font-size: 28px; font-weight: 500">State &nbsp;&nbsp;&nbsp;&nbsp;</label>
                     <select class="ui fluid dropdown" name="state">
                       <option value="<%=resultSet.getString("state") %>" >State</option>
                   <option value="AP">Andhra</option>
@@ -151,7 +151,7 @@ while(resultSet.next()){
                     </select>
                   </div>
                   <div class="field">
-                    <label>Country</label>
+                    <label style="  font-size: 28px; font-weight: 500">Country &nbsp;&nbsp;&nbsp;&nbsp;</label>
                    <div class="field">
                     
                     <select class="ui fluid dropdown" name="country">
@@ -171,10 +171,12 @@ while(resultSet.next()){
 e.printStackTrace();
 }
 %>
-               <center><a href="successupdate.jsp">
+             <br/>
+             <br/>
+             <a href="successupdate.jsp">
                    <button  class="ui green button">Submit ></button></a>
                   
-                   </center>
+                  
                     
        
               </form>

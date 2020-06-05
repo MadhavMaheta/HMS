@@ -77,7 +77,7 @@ public final class adminpage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
 
 Class.forName("com.mysql.jdbc.Driver");
-java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_database","root",""); 
+java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8088/hms","root",""); 
 Statement st= con.createStatement(); 
 String pt=null,dt=null,at=null;
 ResultSet resultSet;

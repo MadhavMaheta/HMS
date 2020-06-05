@@ -119,16 +119,17 @@ public final class admin_005flogin_jsp extends org.apache.jasper.runtime.HttpJsp
     String admin_username = request.getParameter("username");
     String admin_password = request.getParameter("password");
 try{
+    
     if(admin_username!=null && admin_password!=null){
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_database","root",""); 
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:8088/hms","root",""); 
     Statement stmt=con.createStatement();
     
     ResultSet rs=stmt.executeQuery("SELECT * from admin_info WHERE username='"+admin_username+"' AND password='"+admin_password+"' ");
     if(rs.next()){
-	response.sendRedirect("adminpage.jsp");
+         response.sendRedirect("adminpage.jsp");
         return;
-
+        
        }
 else
 {

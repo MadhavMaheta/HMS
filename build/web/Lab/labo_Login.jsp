@@ -18,13 +18,7 @@
 		<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../vendor/fontawesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../vendor/themify-icons/themify-icons.min.css">
-		<!--<link href="C:/Users/ADMIN/Documents/NetBeansProjects/HMS/web/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
-		<link href="C:/Users/ADMIN/Documents/NetBeansProjects/HMS/web/vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
-		<link href="C:/Users/ADMIN/Documents/NetBeansProjects/HMS/web/vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
-		<link rel="stylesheet" href="C:/Users/ADMIN/Documents/NetBeansProjects/HMS/web/assets/css/styles.css">
-		<link rel="stylesheet" href="C:/Users/ADMIN/Documents/NetBeansProjects/HMS/web/assets/css/plugins.css">
-		<link rel="stylesheet" href="C:/Users/ADMIN/Documents/NetBeansProjects/HMS/web/assets/css/themes/theme-1.css" id="skin_color" />
-	-->
+		
 	</head>
 	<body class="login" style="background-image:url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-9-full.jpg)">
 		<div class="row">

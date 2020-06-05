@@ -11,8 +11,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>History</title>
     </head>
-    <body>
-        <table border="1">
+    
+    <body style="background-image:url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-9-full.jpg)">
+    <center>
+        <h1>Patient's History</h1>
+        <table style=" border-color: white ;width: 30%; background-color: lightblue "  border="1">
             <tr>
                 <td>Doc Name</td>
                 <td>Specification</td>
@@ -38,5 +41,6 @@
               }
            %>
         </table>
+        </center>
     </body>
 </html>
